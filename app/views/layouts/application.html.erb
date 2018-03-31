@@ -9,6 +9,19 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class ="masthead mb-auto">
+      <div class ="inner">
+        <%= link_to "PhamBench", "#", id: "logo" %>
+        <nav>
+          <ul class ="nav nav-masthead justify-content-center">
+            <li><%= link_to "Home", "#" %></li>
+            <li><%= link_to "Sign in", "#" %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
