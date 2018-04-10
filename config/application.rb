@@ -15,5 +15,6 @@ module PhamBench
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.assets.precompile << %r(bootstrap-sass/assets/fonts/bootstrap/[\w-]+\.(?:eot|svg|ttf|woff2?)$)
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end

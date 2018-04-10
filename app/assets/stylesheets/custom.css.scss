@@ -1,1 +1,26 @@
 @import "bootstrap";
+
+/* Top画面 */
+#logo {
+  float: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 0px 15px 30px;
+  color: #808080;
+}
+
+// // nav{
+//   margin: 20px 30px 0px 0px;
+//   float: right;
+//   color: #808080;
+// }
+
+nav li a {
+  margin: 20px 30px 0px 0px;
+  float: right;
+  color: #808080;
+}
+
+#home {
+  background-image: url(./images/pham_bg.jpg);
+}
