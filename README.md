@@ -1,24 +1,12 @@
-# README
+# お薬手帳システム
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## なにができるのか？？
 
-Things you may want to cover:
+薬や医療に関するの情報交換ができるSNSです。
 
-* Ruby version
+## 主な機能
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* 薬や医療に関する情報を公開することができます。
+* 文章や画像のアップロードができます。
+* 文章中にURLからそのサイトへリンクさせることができます。
+* フォロー機能
