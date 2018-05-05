@@ -28,6 +28,7 @@ nav li a {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment:fixed;
+  background-color: rgba(255,255,255,0.5);
  }
 
 .center {
@@ -46,9 +47,16 @@ nav li a {
 }
 
 
-/* Signup画面 */
-.sign_up_table {
-    // text-align: center;
-    // background-color: #ffffff;
-    width: 30%;
+/* Signup, signin画面 */
+.sign_up_table, .sign_in_tabel{
+  margin-top: 60px;
+  text-align: left;
 }
+.actions {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* User pages */
+//* TODO */
+// .users_show 

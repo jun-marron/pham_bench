@@ -1,11 +1,18 @@
 <header class="nav">
   <div class="container">
     <%= link_to "PhamBench", root_path, id: "logo" %>
+    <!-- TODO -->
+  <% if signed_in? %>
+  <li>
+        <%= link_to "Sign out", destroy_user_session_path, method: "delete" %>
+  </li>
+  <% else %>
     <nav>
       <ul class="nav justify-content-end">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Sign in", new_user_session_path %></li>
       </ul>
     </nav>
+  <% end %>
   </div>
 </header>
