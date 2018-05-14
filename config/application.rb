@@ -16,5 +16,11 @@ module PhamBench
     # -- all .rb files in that directory are automatically loaded.
     config.assets.precompile << %r(bootstrap-sass/assets/fonts/bootstrap/[\w-]+\.(?:eot|svg|ttf|woff2?)$)
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
+
+    config.i18n.default_locale = :ja
+
+    # Do not swallow errors in after_commit/after_rollback callbacks.
+    # config.active_record.raise_in_transactional_callbacks = true
   end
 end
