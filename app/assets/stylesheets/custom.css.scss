@@ -1,5 +1,11 @@
 @import "bootstrap";
 
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* Top画面 */
 #logo {
   float: left;
@@ -22,6 +28,7 @@ nav li a {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment:fixed;
+  background-color: rgba(255,255,255,0.5);
  }
 
 .center {
@@ -38,3 +45,18 @@ nav li a {
      text-align:center;
    }
 }
+
+
+/* Signup, signin画面 */
+.sign_up_table, .sign_in_tabel{
+  margin-top: 60px;
+  text-align: left;
+}
+.actions {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* User pages */
+//* TODO */
+// .users_show 
