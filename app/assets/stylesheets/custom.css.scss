@@ -58,10 +58,24 @@ nav li a {
   margin-bottom: 15px;
 }
 
-.error_explanation {
-  color: #c70042;
+#error_explanation {
+  color: #e68a8a;
+  margin:5px 0px 5px 0px;
+  border:1px solid;
+  background-color: #ffffff;
+  border-color: #e68a8a;
+  height: auto;
 }
 
+.alert {
+  text-align: left;
+  color: #e68a8a;
+  margin:5px 730px 5px 730px;
+  border:1px solid;
+  background-color: #ffffff;
+  border-color: #e68a8a;
+  width: 20%;
+}
 
 /* User pages */
 @import "users.css.scss";
