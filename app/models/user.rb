@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :micropsts, dependent: :destroy
+  has_many :microposts, dependent: :destroy
   validates :name, presence: true, length: {maximum: 50}
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable

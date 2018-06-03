@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class MicropstTest < ActiveSupport::TestCase
+class micropostTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
