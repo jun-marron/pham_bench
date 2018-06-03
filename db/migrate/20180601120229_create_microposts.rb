@@ -1,6 +1,6 @@
-class CreateMicropsts < ActiveRecord::Migration[5.1]
+class CreateMicroposts < ActiveRecord::Migration[5.1]
   def change
-    create_table :micropsts do |t|
+    create_table :microposts do |t|
       t.string :content
       t.integer :user_id
 
