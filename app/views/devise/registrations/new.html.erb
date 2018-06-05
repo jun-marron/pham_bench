@@ -5,11 +5,12 @@
     <div class="col-md-3 col-md-offset-1">
      <h2>Sign up</h2>
 
-     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
 
         <div class="field">
-          <%= f.label :"名前" %><br />
-          <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+          <%= f.label :"Name" %><br />
+          <%= f.text_field :"name", autofocus: true, autocomplete: "name" %>
         </div>
 
         <div class="field">
@@ -32,5 +33,5 @@
       </div>
      <% end %>
     </div>
-  </div>   
+  </div>
 </div>
