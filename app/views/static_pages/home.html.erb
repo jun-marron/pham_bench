@@ -1,4 +1,10 @@
 <% provide(:title, 'Home') %>
+<% if signed_in? %>
+  <div class="col-md-8">
+    <h3>投稿記事</h3>
+    <%= render 'shared/feed' %>
+  </div>
+<% else %>
 <div class="center">
     <h1>PhamBench</h1>
     <p>
@@ -11,3 +17,4 @@
     <div_class="modal_window">
       <%= render "static_pages/modal_window" %>
     </div>
+<% end %>
