@@ -1,13 +1,4 @@
 <% provide(:title, 'Home') %>
-<% if signed_in? %>
-  <div class="row">
-    <aside class="col-md-4 center">
-      <section>
-        <%= render 'shared/micropost_form'  %>
-      </section>
-    </aside>
-  </div>
-<% else %>
 <div class="center">
     <h1>PhamBench</h1>
     <p>
@@ -20,4 +11,3 @@
     <div_class="modal_window">
       <%= render "static_pages/modal_window" %>
     </div>
-<% end %>
