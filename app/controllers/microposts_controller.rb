@@ -7,6 +7,7 @@ class MicropostsController < ApplicationController
       redirect_to root_url
     else
       render 'static_pages/home'
+    end
   end
 
   def destroy
