@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
   def show
-
     begin
       @user = User.find(params[:id])
+      @micropost = current_user.microposts.build
       @microposts = @user.microposts.paginate(page: params[:page])
     rescue => e
       flash[:notice] = "エラーが発生しました。"
