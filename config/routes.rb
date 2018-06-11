@@ -3,7 +3,7 @@ Rails.application.routes.draw do
      :registrations => "registrations"
    }
   resources :users, only: [:show]
-  resources :microposts, only: [:create, :destroy]
+  resources :microposts, only: [:create]
   root  'static_pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

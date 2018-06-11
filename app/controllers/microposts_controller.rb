@@ -6,7 +6,7 @@ class MicropostsController < ApplicationController
     if @micropost.save
       redirect_to current_user
     else
-      render 'static_pages/home'
+      redirect_to current_user
     end
   end
 
