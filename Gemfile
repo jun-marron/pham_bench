@@ -20,6 +20,8 @@ gem 'jquery-rails'
 gem 'sprockets', '~> 3.7.1'
 gem 'devise', '~> 4.4.3'
 gem 'rails-i18n'
+gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-bootstrap'
 
 
 
