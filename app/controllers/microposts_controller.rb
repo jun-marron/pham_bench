@@ -6,6 +6,7 @@ class MicropostsController < ApplicationController
     if @micropost.save
       redirect_to current_user
     else
+       flash[:error] = "文字が入力されていません。"
       redirect_to current_user
     end
   end

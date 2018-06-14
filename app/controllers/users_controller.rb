@@ -4,9 +4,9 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
       @micropost = current_user.microposts.build
       @microposts = @user.microposts.paginate(page: params[:page])
-    # rescue => e
-    #   flash[:notice] = "エラーが発生しました。"
-    #   redirect_to root_path
+    rescue => e
+      flash[:notice] = "エラーが発生しました。"
+      redirect_to root_path
     end
   end
 
