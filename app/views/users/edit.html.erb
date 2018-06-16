@@ -1,5 +1,12 @@
 <% provide(:title, 'ユーザー 編集') %>
 <h1>ユーザー 編集</h1>
+<p> 自己紹介文編集 </p>
+<%= form_for(@user) do |f| %>
+  <%= f.text_field :"remark", autofocus: true, autocomplete: "remark" %>
+  
+  <%= f.submit %>
+<% end %>
+
   <li>
     <%= link_to "編集",  edit_user_registration_path, class:"btn btn-primary" %>
   </li>
