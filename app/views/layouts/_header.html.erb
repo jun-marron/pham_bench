@@ -3,9 +3,10 @@
     <%= link_to "PhamBench", root_path, id: "logo" %>
     <!-- TODO -->
   <% if signed_in? %>
-  <li>
-        <%= link_to "Sign out", destroy_user_session_path, method: "delete" %>
-  </li>
+   <li>
+     <%= link_to "Sign out", destroy_user_session_path, method: "delete" %>
+     <%= link_to "マイページ", current_user %>
+   </li>
   <% else %>
     <nav>
       <ul class="nav justify-content-end">
