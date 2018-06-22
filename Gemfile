@@ -22,6 +22,9 @@ gem 'devise', '~> 4.4.3'
 gem 'rails-i18n'
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap'
+gem 'carrierwave', '~> 1.0'
+gem 'rmagick', require: 'RMagick'
+
 
 
 
