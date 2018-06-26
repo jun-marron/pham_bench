@@ -1,7 +1,7 @@
-class CreateImageposts < ActiveRecord::Migration[5.1]
+class Createimageposts < ActiveRecord::Migration[5.1]
   def change
     create_table :imageposts do |t|
-      t.string :picture
+      t.string :image
       t.integer :user_id
 
       t.timestamps

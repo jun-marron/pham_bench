@@ -20,4 +20,19 @@
       <%= will_paginate @microposts, renderer: BootstrapPagination::Rails %>
     <% end %>
   </div>
+  <div class="row">
+    <aside class="col-md-4 center">
+      <section>
+        <%= render 'shared/imagepost_form'  %>
+      </section>
+    </aside>
+  </div>
+  <div class="col-md-8">
+    <% if @user.imageposts.any? %>
+      <h3>画像</h3>
+      <ol class="imageposts">
+        <%= render @imageposts %>
+      </ol>
+    <% end %>
+  </div>
 </body>
