@@ -1,4 +1,4 @@
-class ImagesController < ApplicationController
+class ImagepostsController < ApplicationController
   before_action :authenticate_user!
 
   def create
