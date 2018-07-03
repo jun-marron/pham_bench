@@ -4,7 +4,7 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
       @micropost = current_user.microposts.build
       @microposts = @user.microposts.paginate(page: params[:page])
-      @imagepost = current_user.imageposts.build
+      @imagepost = current_user.imageposts.new
       @imageposts = @user.imageposts.paginate(page: params[:page])
     # rescue => e
       # flash[:notice] = "エラーが発生しました。"
